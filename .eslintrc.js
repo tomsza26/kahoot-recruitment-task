@@ -52,6 +52,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/function-component-definition': 0,
+    'react/display-name': 0,
 
     'react-hooks/rules-of-hooks': 2,
 

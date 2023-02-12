@@ -1,15 +1,13 @@
+import { memo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { getItemPointsById } from 'containers/App/selectors';
+import { getItemScoreById } from 'containers/App/selectors';
 
+import { Props } from '../Row';
 import { QuantityStyled } from '../styles';
 
-type Props = {
-  id: string;
-};
-
-export const Score = ({ id }: Props) => {
-  const points = useSelector((state) => getItemPointsById(state, id));
+export const Score = memo(({ id }: Props) => {
+  const points = useSelector((state) => getItemScoreById(state, id));
 
   return <QuantityStyled>{points}</QuantityStyled>;
-};
+});

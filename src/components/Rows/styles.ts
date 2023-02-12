@@ -3,8 +3,9 @@ import { styled } from 'goober';
 import { BORDER, RED } from 'global-styles';
 
 export const RowsStyled = styled('div')`
-  flex: 1;
-  overflow-y: scroll;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  height: 0;
 `;
 
 export const RowStyled = styled('div')`

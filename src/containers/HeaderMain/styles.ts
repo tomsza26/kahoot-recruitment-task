@@ -14,7 +14,7 @@ export const Logo = styled('img')`
   margin-right: 1rem;
 `;
 
-export const Header = styled('span')`
+export const Header = styled('header')`
   font-size: 2.5rem;
   font-weight: 600;
 `;

@@ -7,6 +7,8 @@ export const RED = '#e21b3c';
 
 export const BORDER = '3px solid #fff';
 
+export const BREAKPOINT_MD = '1200px';
+
 export const GlobalStyles = createGlobalStyles`
   * {
     box-sizing: border-box;
@@ -20,5 +22,9 @@ export const GlobalStyles = createGlobalStyles`
     padding: 0;
     font-size: 30px;
     color: #fff;
+
+    @media screen and (max-width: ${BREAKPOINT_MD}) {
+      font-size: 20px;
+    }
   }
 `;

@@ -1,13 +1,15 @@
+import { ids } from 'containers/App/constants';
+
 import { Item } from './Item';
-import { Header, ItemsWrapper, StyledContentMain } from './styles';
+import { ContentMainStyled, Header, ItemsWrapper } from './styles';
 
 export const ContentMain = () => (
-  <StyledContentMain>
+  <ContentMainStyled>
     <Header>Items</Header>
     <ItemsWrapper>
-      <Item />
-      <Item />
-      <Item />
+      {ids.map((id) => (
+        <Item id={id} key={id} />
+      ))}
     </ItemsWrapper>
-  </StyledContentMain>
+  </ContentMainStyled>
 );

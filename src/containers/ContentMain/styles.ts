@@ -2,8 +2,8 @@ import { styled } from 'goober';
 
 import { BORDER, RED } from 'global-styles';
 
-export const StyledContentMain = styled('div')`
-  overflow-y: scroll;
+export const ContentMainStyled = styled('div')`
+  overflow-y: auto;
   padding: 0.35rem;
 `;
 
@@ -20,7 +20,7 @@ export const ItemsWrapper = styled('div')`
   padding: 0.5rem;
 `;
 
-export const StyledItem = styled('div')`
+export const ItemStyled = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;

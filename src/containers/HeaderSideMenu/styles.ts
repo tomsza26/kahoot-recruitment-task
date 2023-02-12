@@ -11,7 +11,7 @@ export const StyledHeaderSideMenu = styled('div')`
   border-bottom: ${BORDER};
 `;
 
-export const Header = styled('span')`
-  font-size: 1.5rem;
+export const Header = styled('header')`
+  font-size: 1.3rem;
   font-weight: 600;
 `;

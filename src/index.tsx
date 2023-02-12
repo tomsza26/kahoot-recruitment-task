@@ -1,6 +1,10 @@
 // @ts-nocheck
 // TODO - type
 
+if (process.env.NODE_ENV !== 'production') {
+  require('preact/debug');
+}
+
 import { setup } from 'goober';
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';

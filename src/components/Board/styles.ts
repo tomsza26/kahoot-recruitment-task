@@ -11,8 +11,7 @@ export const BoardStyled = styled('div')`
 export const Headers = styled('div')`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0;
   border-bottom: ${BORDER};
 
   span {

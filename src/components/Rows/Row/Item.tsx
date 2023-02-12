@@ -1,7 +1,6 @@
+import { memo } from 'react';
+
+import { Props } from '../Row';
 import { ItemStyled } from '../styles';
 
-type Props = {
-  id: string;
-};
-
-export const Item = ({ id }: Props) => <ItemStyled>{id}</ItemStyled>;
+export const Item = memo(({ id }: Props) => <ItemStyled>{id}</ItemStyled>);

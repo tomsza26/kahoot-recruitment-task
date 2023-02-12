@@ -1,11 +1,11 @@
 import { Button } from './Button';
 import { Counter } from './Counter';
-import { CounterWrapper, GameStatusStyled, Header } from './styles';
+import { CounterWrapper, GameStatusStyled } from './styles';
 
 export const GameStatus = () => (
   <GameStatusStyled>
     <CounterWrapper>
-      <Header>Total</Header>
+      <header>Total</header>
       <Counter />
     </CounterWrapper>
     <Button />
